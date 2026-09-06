@@ -20,27 +20,55 @@
 
 ## What I actually do
 
-I spent six months at **Kraftshala** owning features end to end on the internal
-operations platform a real team used every day — **331 commits** across a
-Node/TypeScript/MySQL backend and a React/Redux frontend.
+Two full-stack roles and a teaching assistantship since 2024, alongside a B.Tech
+in CSE at MAIT that I finish in 2026 (9.2 CGPA, top 25 in GGSIPU). Backend-leaning
+— but I've usually shipped the frontend for whatever I built on the backend.
+
+### Kraftshala &nbsp;·&nbsp; Software Developer, Full-stack &nbsp;·&nbsp; Mar – Sep 2026 &nbsp;·&nbsp; Delhi
+
+Six months owning features end to end on the internal operations platform a real
+team used every day — **331 commits** across a Node/TypeScript/MySQL backend and a
+React/Redux frontend.
 
 The piece I'd most want to walk you through is a **self-service alerting
-platform**. Teams define a SQL rule and a threshold through an API, a
-per-minute cron evaluates them and posts to Google Chat. Because the SQL is
-user-supplied it needed a validation layer that permits only `SELECT` and
-`WITH` and blocks DDL and DML. A few months later another engineer shipped two
-of their own alert features on top of it without needing me. That's the part
-I'm proud of — not the feature, the fact that it became something someone else
-could build on.
+platform**. Teams define a SQL rule and a threshold through an API, a per-minute
+cron evaluates them and posts to Google Chat. Because the SQL is user-supplied it
+needed a validation layer that permits only `SELECT` and `WITH` and blocks DDL and
+DML. A few months later another engineer shipped two of their own alert features
+on top of it without needing me. That's the part I'm proud of — not the feature,
+the fact that it became something someone else could build on.
 
-I also broke production once: an SSO restriction I added locked some admins out
-of password sign-in. I caught it and rolled it back inside 48 hours. I'd rather
-say that up front than have you find it.
+Elsewhere on that platform: a **bulk Excel upload engine** that validates, parses
+and deduplicates 1,000+ records per upload and cut the manual work by ~80%;
+**Google OAuth 2.0 SSO** plus HTTP 409 conflict detection that stopped
+double-bookings across the Zoom, CRM and payment integrations; and a **Placements
+Opportunity Tracker** with transactional owner reassignment, a reusable audit log,
+and a listing query rewritten from six subqueries down to one join.
+
+I also broke production once: an SSO restriction I added locked some admins out of
+password sign-in. I caught it and rolled it back inside 48 hours. I'd rather say
+that up front than have you find it.
+
+### BWS &nbsp;·&nbsp; Full-Stack Developer &nbsp;·&nbsp; Jul – Dec 2025 &nbsp;·&nbsp; Remote
+
+My first fully remote role, maintaining a production website across frontend and
+backend. I built and deployed an **AI chatbot** on the company site with the MERN
+stack that handles 100+ visitor queries without a human, a **"Request a Callback"**
+flow that syncs leads straight into Zoho CRM over REST (200 of them so far), and a
+WhatsApp community integration. I also took the site from **~8s to ~2s** through
+performance and on-page SEO work.
+
+### Coding Blocks &nbsp;·&nbsp; Teaching Assistant &nbsp;·&nbsp; May – Aug 2024 &nbsp;·&nbsp; Noida
+
+Mentored 100+ students through Java, data structures and algorithms in doubt
+sessions and one-on-one code reviews. Reading other people's code that closely,
+that often, is where I learned what actually makes code easy to follow.
 
 <table>
-<tr><td><b>~40s → ~400ms</b></td><td>Dashboard queries rebuilt around a deferred join, and the inflated pagination counts fixed with them</td></tr>
-<tr><td><b>1,000+ rows</b></td><td>Per bulk Excel upload, validated before any write, processed through a Bull queue</td></tr>
-<tr><td><b>~8s → ~2s</b></td><td>Page load on a production site, through performance and on-page SEO work</td></tr>
+<tr><td><b>~40s → ~400ms</b></td><td>Dashboard queries rebuilt around a deferred join, and the inflated pagination counts fixed with them &nbsp;<sub>Kraftshala</sub></td></tr>
+<tr><td><b>~2k → ~400k/day</b></td><td>Calendar-invite throughput, after decoupling event creation from delivery via AWS SES behind default-off feature flags &nbsp;<sub>Kraftshala</sub></td></tr>
+<tr><td><b>1,000+ rows</b></td><td>Per bulk Excel upload, validated before any write, processed through a Bull queue &nbsp;<sub>Kraftshala</sub></td></tr>
+<tr><td><b>~8s → ~2s</b></td><td>Page load on a production site, through performance and on-page SEO work &nbsp;<sub>BWS</sub></td></tr>
 </table>
 
 ---
