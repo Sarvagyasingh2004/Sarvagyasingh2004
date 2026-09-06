@@ -12,6 +12,7 @@
 <a href="https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio"><img src="https://img.shields.io/badge/Portfolio-source-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio source" /></a>
 <a href="https://www.linkedin.com/in/sarvagya-singh-1015722a4"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://leetcode.com/u/Sarvagyasingh_2004/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+<a href="mailto:sarvagya3555cc@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email sarvagya3555cc@gmail.com" /></a>
 
 </div>
 
