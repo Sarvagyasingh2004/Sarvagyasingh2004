@@ -80,7 +80,7 @@ that often, is where I learned what actually makes code easy to follow.
 | **[Eatlify](https://github.com/Sarvagyasingh2004/eatlify-food-ordering-microservices)** — food delivery microservices | Six services coordinating one order, built so any of them can fail without taking the order with it. Retries, a dead-letter queue and health checks; Redis caching cut DB reads ~60%. | `Node` `TypeScript` `RabbitMQ` `Socket.IO` `Redis` `Docker` |
 | **Skein** — real-time chat &nbsp;·&nbsp; [frontend](https://github.com/Sarvagyasingh2004/Skein-frontend) &nbsp;·&nbsp; [backend](https://github.com/Sarvagyasingh2004/Skein-backend) | RabbitMQ sits *behind* the WebSocket layer instead of the socket writing straight to the database — which is what makes acknowledgements and offline delivery actually work. | `Next.js` `TypeScript` `MongoDB` `Redis` `RabbitMQ` |
 | **[SaaSify-AI](https://github.com/Sarvagyasingh2004/SaaSify-AI)** | Two LLM providers behind one adapter, so swapping or adding a model is a config change rather than a rewrite. | `React` `Node` `PostgreSQL` `OpenAI` `Claude` |
-| **[This portfolio](https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio)** | Next.js 16 + React Three Fiber. A scroll-driven WebGL constellation, a Gemini-backed assistant, and a theme that follows your local clock. | `Next.js` `R3F` `GSAP` `Gemini` |
+| **[My portfolio](https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio)** | Next.js 16 + React Three Fiber. A scroll-driven WebGL constellation, a Gemini-backed assistant, and a theme that follows your local clock. | `Next.js` `R3F` `GSAP` `Gemini` |
 
 ---
 
