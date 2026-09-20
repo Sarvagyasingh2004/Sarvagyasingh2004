@@ -58,7 +58,7 @@ on Vercel. Every project below has a URL you can open right now.
 <td width="50%" valign="top">
 <div align="center">
 <br/>
-<a href="https://eatlify-food-ordering-microservices.vercel.app"><img src="assets/eatlify.png" width="94%" alt="Eatlify" /></a>
+<a href="https://eatlify-food-ordering-microservices.vercel.app"><img src="assets/eatlify-login.png" width="94%" alt="Eatlify" /></a>
 <h3>Eatlify</h3>
 <p><em>Food ordering platform</em></p>
 <p>Six services coordinating one order, built so any of them can fail without taking the order with it. Retries, a dead-letter queue and health checks; Redis caching cut DB reads ~60%. Live rider tracking over Socket.IO, payments via Razorpay and Stripe.</p>
