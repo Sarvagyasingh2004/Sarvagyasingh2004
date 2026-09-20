@@ -40,76 +40,88 @@ on Vercel. Every project below has a URL you can open right now.
 
 ## 🚀 &nbsp;Featured projects
 
-<table>
+<table cellpadding="16">
 <tr>
 <td width="50%" valign="top">
 <div align="center">
-<a href="https://legwork-the-ai-interview-prep-kit-w.vercel.app"><img src="assets/legwork.png" width="100%" alt="Legwork" /></a>
+<br/>
+<a href="https://legwork-the-ai-interview-prep-kit-w.vercel.app"><img src="assets/legwork.png" width="94%" alt="Legwork" /></a>
 <h3>Legwork</h3>
 <p><em>AI interview prep kit</em></p>
 <p>Turns a job posting and a company URL into a researched prep kit. The model must quote the span every requirement came from, and code verifies it really exists — anything unproven is discarded. Coverage is checked in code, not by a model.</p>
 <img src="https://skillicons.dev/icons?i=nextjs,express,mongodb,ts,tailwind,vercel" height="34" alt="stack" />
 <br/><br/>
 <a href="https://legwork-the-ai-interview-prep-kit-w.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a> <a href="https://github.com/Sarvagyasingh2004/Legwork-The-AI-Interview-Prep-Kit"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+<br/>
 </div>
 </td>
 <td width="50%" valign="top">
 <div align="center">
-<a href="https://eatlify-food-ordering-microservices.vercel.app"><img src="assets/eatlify.png" width="100%" alt="Eatlify" /></a>
+<br/>
+<a href="https://eatlify-food-ordering-microservices.vercel.app"><img src="assets/eatlify.png" width="94%" alt="Eatlify" /></a>
 <h3>Eatlify</h3>
 <p><em>Food ordering platform</em></p>
 <p>Six services coordinating one order, built so any of them can fail without taking the order with it. Retries, a dead-letter queue and health checks; Redis caching cut DB reads ~60%. Live rider tracking over Socket.IO, payments via Razorpay and Stripe.</p>
 <img src="https://skillicons.dev/icons?i=nodejs,ts,rabbitmq,redis,mongodb,docker,nginx" height="34" alt="stack" />
 <br/><br/>
 <a href="https://eatlify-food-ordering-microservices.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a> <a href="https://github.com/Sarvagyasingh2004/eatlify-food-ordering-microservices"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+<br/>
 </div>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <div align="center">
-<a href="https://skein-frontend-kappa.vercel.app"><img src="assets/skein.png" width="100%" alt="Skein" /></a>
+<br/>
+<a href="https://skein-frontend-kappa.vercel.app"><img src="assets/skein.png" width="94%" alt="Skein" /></a>
 <h3>Skein</h3>
 <p><em>Real-time chat</em></p>
 <p>Passwordless chat — sign in with an emailed OTP, then live messages, typing indicators and read receipts. Email is decoupled over RabbitMQ, failed sends land in a dead-letter queue with peek/replay/purge tooling, and Socket.IO scales through the Redis adapter.</p>
 <img src="https://skillicons.dev/icons?i=nextjs,ts,nodejs,mongodb,redis,rabbitmq" height="34" alt="stack" />
 <br/><br/>
 <a href="https://skein-frontend-kappa.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a><br/><br/><a href="https://github.com/Sarvagyasingh2004/Skein-frontend"><img src="https://img.shields.io/badge/Frontend-181717?style=for-the-badge&logo=github&logoColor=white" alt="Frontend" /></a> <a href="https://github.com/Sarvagyasingh2004/Skein-backend"><img src="https://img.shields.io/badge/Backend-181717?style=for-the-badge&logo=github&logoColor=white" alt="Backend" /></a>
+<br/>
 </div>
 </td>
 <td width="50%" valign="top">
 <div align="center">
-<a href="https://saasify-ai.vercel.app"><img src="assets/saasify.png" width="100%" alt="SaaSify&#8209;AI" /></a>
+<br/>
+<a href="https://saasify-ai.vercel.app"><img src="assets/saasify.png" width="94%" alt="SaaSify&#8209;AI" /></a>
 <h3>SaaSify&#8209;AI</h3>
 <p><em>AI content platform</em></p>
 <p>A PERN-stack AI SaaS with article and image generation, plus a r&eacute;sum&eacute; scorer that reads an uploaded PDF and reports back against a role.</p>
 <img src="https://skillicons.dev/icons?i=react,nodejs,express,postgres,vercel" height="34" alt="stack" />
 <br/><br/>
 <a href="https://saasify-ai.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a> <a href="https://github.com/Sarvagyasingh2004/SaaSify-AI"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+<br/>
 </div>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <div align="center">
-<a href="https://sarvagyasingh.space"><img src="assets/portfolio.png" width="100%" alt="Portfolio" /></a>
+<br/>
+<a href="https://sarvagyasingh.space"><img src="assets/portfolio.png" width="94%" alt="Portfolio" /></a>
 <h3>Portfolio</h3>
 <p><em>sarvagyasingh.space</em></p>
 <p>Next.js and React Three Fiber — a scroll-driven WebGL sequence, a theme that follows your local clock, and a Gemini-backed assistant that answers from a curated corpus instead of improvising.</p>
 <img src="https://skillicons.dev/icons?i=nextjs,ts,threejs,tailwind,mongodb,vercel" height="34" alt="stack" />
 <br/><br/>
 <a href="https://sarvagyasingh.space"><img src="https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a> <a href="https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+<br/>
 </div>
 </td>
 <td width="50%" valign="top">
 <div align="center">
-<a href="https://gsap-velvet-pour.vercel.app"><img src="assets/velvet.png" width="100%" alt="Velvet Pour" /></a>
+<br/>
+<a href="https://gsap-velvet-pour.vercel.app"><img src="assets/velvet.png" width="94%" alt="Velvet Pour" /></a>
 <h3>Velvet Pour</h3>
 <p><em>Animated marketing site</em></p>
 <p>A cocktail bar landing page built to practise scroll-driven animation — pinned sections, timeline-sequenced reveals, and a responsive layout that reworks the choreography rather than just reflowing it.</p>
 <img src="https://skillicons.dev/icons?i=react,tailwind,vite,js" height="34" alt="stack" />
 <br/><br/>
 <a href="https://gsap-velvet-pour.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live demo" /></a> <a href="https://github.com/Sarvagyasingh2004/gsap_velvet_pour"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+<br/>
 </div>
 </td>
 </tr>
