@@ -1,28 +1,117 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=25&pause=1400&color=8B5CF6&center=true&vCenter=true&width=680&height=45&lines=Full-stack+engineer%2C+backend-leaning;I+build+the+boring+infrastructure;that+other+people+build+on." alt="Full-stack engineer — I build the boring infrastructure that other people build on" />
+# Sarvagya Singh
 
-<br />
+**Full-Stack &amp; Backend Engineer**
 
-**Delhi NCR, India** &nbsp;·&nbsp; B.Tech CSE @ MAIT (GGSIPU), 2026 &nbsp;·&nbsp; 9.2 CGPA
+I build production web applications end to end — event-driven backends,
+real-time systems, and the interfaces that sit on top of them.
 
-<!-- sarvagyasingh.space is still a Hostinger parking page. The moment Vercel +
-     DNS are done, swap the href below for https://sarvagyasingh.space and change
-     the label back to sarvagyasingh.space. -->
-<a href="https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio"><img src="https://img.shields.io/badge/Portfolio-source-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio source" /></a>
+**Delhi NCR, India** &nbsp;·&nbsp; Open to remote, worldwide
+
+<a href="https://sarvagyasingh.space"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 <a href="https://www.linkedin.com/in/sarvagya-singh-1015722a4"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:sarvagya3555cc@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://leetcode.com/u/Sarvagyasingh_2004/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
-<a href="mailto:sarvagya3555cc@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email sarvagya3555cc@gmail.com" /></a>
 
 </div>
 
 ---
 
-## What I actually do
+## What I build
 
-Two full-stack roles and a teaching assistantship since 2024, alongside a B.Tech
-in CSE at MAIT that I finish in 2026 (9.2 CGPA, top 25 in GGSIPU). Backend-leaning
-— but I've usually shipped the frontend for whatever I built on the backend.
+**Backend and distributed systems.** REST APIs, services that talk to each other
+over RabbitMQ instead of blocking on each other, WebSocket real-time layers,
+payment integration with Razorpay and Stripe, and schema and query design across
+PostgreSQL, MySQL and MongoDB.
+
+**Frontend and product.** React and Next.js applications, Redux state
+architecture, data-heavy dashboards and internal admin tools, and animation work
+with GSAP and Three.js when the interface has to sell something.
+
+**Getting it live.** Dockerised services behind nginx with TLS on cloud VMs, and
+Next.js on Vercel. Every project below has a URL you can open right now.
+
+Currently open to **full-time roles**, remote or in Delhi NCR, and to **selective
+freelance work** — most often an API, a real-time feature, or a dashboard that
+has outgrown whatever it started as.
+
+---
+
+## Featured projects
+
+### Legwork — AI interview prep kit
+**[Live demo](https://legwork-the-ai-interview-prep-kit-w.vercel.app)** &nbsp;·&nbsp; **[Code](https://github.com/Sarvagyasingh2004/Legwork-The-AI-Interview-Prep-Kit)**
+
+Turns a job posting and a company URL into a researched prep kit: a company
+brief, a role breakdown, a categorised question bank, flashcards and a
+day-by-day study schedule.
+
+What makes it more than a prompt wrapper is that it refuses to invent things.
+The model has to quote the span of the posting every requirement came from, and
+code verifies that span really appears there — anything it cannot prove is
+discarded. Question coverage is then checked in code rather than by a model, and
+gaps go back for a targeted second pass.
+
+`Next.js 16` `Express 5` `MongoDB` `TypeScript` `Gemini 2.5 Flash` `Vitest` `Supertest`
+
+### Eatlify — food ordering platform
+**[Live demo](https://eatlify-food-ordering-microservices.vercel.app)** &nbsp;·&nbsp; **[Code](https://github.com/Sarvagyasingh2004/eatlify-food-ordering-microservices)**
+
+A Swiggy-style ordering platform: six services — auth, restaurant, rider,
+realtime, admin and utils — coordinating one order, built so any of them can
+fail without taking the order with it. Retries, a dead-letter queue and health
+checks; Redis caching cut DB reads ~60%.
+
+Services talk over RabbitMQ rather than calling each other directly, so a slow
+payment callback never blocks an order being placed. Live order and rider
+tracking runs over Socket.IO, payments go through Razorpay and Stripe, and the
+whole stack comes up with Docker Compose behind nginx with TLS.
+
+`Node` `TypeScript` `RabbitMQ` `Socket.IO` `Redis` `Docker` `nginx`
+
+### Skein — real-time chat
+**[Live demo](https://skein-frontend-kappa.vercel.app)** &nbsp;·&nbsp; **[Frontend](https://github.com/Sarvagyasingh2004/Skein-frontend)** &nbsp;·&nbsp; **[Backend](https://github.com/Sarvagyasingh2004/Skein-backend)**
+
+Passwordless chat — you sign in with an emailed OTP, then get live messages,
+typing indicators and read receipts.
+
+Three services behind it. Email is decoupled over RabbitMQ so a slow SMTP
+handshake never holds up a login, and failed sends land in a dead-letter queue
+with a `peek` / `replay` / `purge` tool rather than disappearing. Socket.IO is
+scaled through the Redis adapter, so presence survives more than one instance.
+
+`Next.js 16` `TypeScript` `Node.js` `MongoDB` `Redis` `RabbitMQ` `Socket.IO`
+
+### SaaSify-AI — AI content platform
+**[Live demo](https://saasify-ai.vercel.app)** &nbsp;·&nbsp; **[Code](https://github.com/Sarvagyasingh2004/SaaSify-AI)**
+
+A PERN-stack AI SaaS with article and image generation and a résumé scorer that
+reads an uploaded PDF and reports back against a role.
+
+`React` `Node.js` `Express` `PostgreSQL` `Gemini` `Clerk` `Cloudinary`
+
+### Portfolio — sarvagyasingh.space
+**[Live demo](https://sarvagyasingh.space)** &nbsp;·&nbsp; **[Code](https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio)**
+
+Next.js and React Three Fiber: a scroll-driven WebGL sequence, a theme that
+follows your local clock, and a Gemini-backed assistant that answers questions
+about my work from a curated corpus instead of improvising.
+
+`Next.js` `TypeScript` `React Three Fiber` `GSAP` `MongoDB Atlas` `Gemini`
+
+### Velvet Pour — animated marketing site
+**[Live demo](https://gsap-velvet-pour.vercel.app)** &nbsp;·&nbsp; **[Code](https://github.com/Sarvagyasingh2004/gsap_velvet_pour)**
+
+A cocktail bar landing page built to practise scroll-driven animation — pinned
+sections, timeline-sequenced reveals and a responsive layout that reworks the
+choreography rather than just reflowing it.
+
+`React` `GSAP` `Tailwind CSS` `Vite`
+
+---
+
+## Experience
 
 ### Kraftshala &nbsp;·&nbsp; Software Developer, Full-stack &nbsp;·&nbsp; Mar – Sep 2026 &nbsp;·&nbsp; Delhi
 
@@ -73,98 +162,25 @@ that often, is where I learned what actually makes code easy to follow.
 
 ---
 
-## Things I've built
-
-| Project | What makes it interesting | Built with |
-|---|---|---|
-| **[Eatlify](https://github.com/Sarvagyasingh2004/eatlify-food-ordering-microservices)** — food delivery microservices | Six services coordinating one order, built so any of them can fail without taking the order with it. Retries, a dead-letter queue and health checks; Redis caching cut DB reads ~60%. | `Node` `TypeScript` `RabbitMQ` `Socket.IO` `Redis` `Docker` |
-| **Skein** — real-time chat &nbsp;·&nbsp; [frontend](https://github.com/Sarvagyasingh2004/Skein-frontend) &nbsp;·&nbsp; [backend](https://github.com/Sarvagyasingh2004/Skein-backend) | RabbitMQ sits *behind* the WebSocket layer instead of the socket writing straight to the database — which is what makes acknowledgements and offline delivery actually work. | `Next.js` `TypeScript` `MongoDB` `Redis` `RabbitMQ` |
-| **[SaaSify-AI](https://github.com/Sarvagyasingh2004/SaaSify-AI)** | Two LLM providers behind one adapter, so swapping or adding a model is a config change rather than a rewrite. | `React` `Node` `PostgreSQL` `OpenAI` `Claude` |
-| **[My portfolio](https://github.com/Sarvagyasingh2004/sarvagya-singh-portfolio)** | Next.js 16 + React Three Fiber. A scroll-driven WebGL constellation, a Gemini-backed assistant, and a theme that follows your local clock. | `Next.js` `R3F` `GSAP` `Gemini` |
-
----
-
 ## Stack
 
-<div align="center">
+**Languages** &nbsp; TypeScript · JavaScript · Python · Java · SQL
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+**Frontend** &nbsp; React · Next.js · Redux · Tailwind CSS · Material-UI · GSAP · Three.js
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+**Backend** &nbsp; Node.js · Express · REST APIs · Socket.IO · RabbitMQ · JWT · OAuth 2.0
 
-</div>
+**Data** &nbsp; PostgreSQL · MySQL · MongoDB · Redis · query optimisation and indexing
 
----
-
-## The numbers
-
-<div align="center">
-
-<!-- github-readme-stats' shared instance answers 503, and the trophy and
-     activity-graph apps answer 402 (their Vercel quota is spent). These cards
-     are the ones that actually respond. -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sarvagyasingh2004&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Sarvagyasingh2004&theme=default" alt="profile details" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Sarvagyasingh2004&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Sarvagyasingh2004&theme=default" alt="repos per language" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sarvagyasingh2004&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Sarvagyasingh2004&theme=default" alt="most commit language" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Sarvagyasingh2004&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Sarvagyasingh2004&theme=default" alt="stats" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sarvagyasingh2004&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Sarvagyasingh2004&theme=default" alt="productive time" />
-</picture>
-
-<br />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Sarvagyasingh2004&hide_border=true&theme=tokyonight&background=00000000&ring=8B5CF6&fire=8B5CF6&currStreakLabel=8B5CF6" />
-  <img src="https://streak-stats.demolab.com?user=Sarvagyasingh2004&hide_border=true&background=00000000&ring=7C3AED&fire=7C3AED&currStreakLabel=7C3AED" height="165" alt="Contribution streak" />
-</picture>
-
-<br /><br />
-
-<!-- Generated hourly by .github/workflows/snake.yml -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sarvagyasingh2004/Sarvagyasingh2004/output/snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/Sarvagyasingh2004/Sarvagyasingh2004/output/snake.svg" alt="A snake eating my contribution graph" />
-</picture>
-
-</div>
+**Infrastructure** &nbsp; Docker · nginx · AWS EC2 · Oracle Cloud · Vercel · Git
 
 ---
 
 <div align="center">
 
-**Open to full-time backend or full-stack roles** — Delhi NCR, hybrid, or fully remote.
+Currently deepening **data structures, algorithms and system design**, and
+writing the systems above up as proper case studies.
 
-Currently deepening DSA and system design, and writing the systems above up as case studies.
-
-<a href="https://www.linkedin.com/in/sarvagya-singh-1015722a4"><img src="https://img.shields.io/badge/Get%20in%20touch-8B5CF6?style=for-the-badge&logo=linkedin&logoColor=white" alt="Get in touch" /></a>
+**[sarvagya3555cc@gmail.com](mailto:sarvagya3555cc@gmail.com)** &nbsp;·&nbsp; **[LinkedIn](https://www.linkedin.com/in/sarvagya-singh-1015722a4)** &nbsp;·&nbsp; **[sarvagyasingh.space](https://sarvagyasingh.space)**
 
 </div>
