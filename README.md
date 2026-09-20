@@ -45,7 +45,7 @@ on Vercel. Every project below has a URL you can open right now.
 <td width="50%" valign="top">
 <div align="center">
 <br/>
-<a href="https://legwork-the-ai-interview-prep-kit-w.vercel.app"><img src="assets/legwork.png" width="94%" alt="Legwork" /></a>
+<a href="https://legwork-the-ai-interview-prep-kit-w.vercel.app"><img src="assets/legwork-dark.png" width="94%" alt="Legwork" /></a>
 <h3>Legwork</h3>
 <p><em>AI interview prep kit</em></p>
 <p>Turns a job posting and a company URL into a researched prep kit. The model must quote the span every requirement came from, and code verifies it really exists — anything unproven is discarded. Coverage is checked in code, not by a model.</p>
@@ -101,7 +101,7 @@ on Vercel. Every project below has a URL you can open right now.
 <td width="50%" valign="top">
 <div align="center">
 <br/>
-<a href="https://sarvagyasingh.space"><img src="assets/portfolio.png" width="94%" alt="Portfolio" /></a>
+<a href="https://sarvagyasingh.space"><img src="assets/portfolio-dark.png" width="94%" alt="Portfolio" /></a>
 <h3>Portfolio</h3>
 <p><em>sarvagyasingh.space</em></p>
 <p>Next.js and React Three Fiber — a scroll-driven WebGL sequence, a theme that follows your local clock, and a Gemini-backed assistant that answers from a curated corpus instead of improvising.</p>
